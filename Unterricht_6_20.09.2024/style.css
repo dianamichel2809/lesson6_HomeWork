@@ -1,0 +1,75 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #2F265C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Ограничение ширины контейнера */
+    padding: 20px;
+}
+
+.profile-card {
+    background: #3A3665;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.profile {
+    width: 100px; /* Адаптивный размер аватара */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; /* Изображение заполняет круг */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #CCCCCC;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Расстояние между иконками */
+    justify-content: center;
+    width: 100%;
+    margin-top: auto; /* Чтобы иконки были внизу карточки */
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: #03bfbc;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #231e39;
+}
